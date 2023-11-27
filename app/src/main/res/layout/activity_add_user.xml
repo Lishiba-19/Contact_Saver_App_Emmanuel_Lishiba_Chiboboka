@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".addUser_Activity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:background="@color/lightgrey"
+        android:text="Contact Details App"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_weight="1"
+        android:text="Select a profile image"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="15dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        >
+
+        <ImageView
+            android:id="@+id/profileImg"
+            android:layout_width="152dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="30dp"
+            app:srcCompat="@drawable/profile"/>
+
+
+        <Button
+            android:id="@+id/profileBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:onClick="selectProfileBack"
+            android:text="Previous"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/profileFront"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:onClick="selectProfileNext"
+            android:text="Next"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        >
+
+
+
+        <EditText
+            android:id="@+id/nametxtId"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Name"
+            android:textAlignment="textStart"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        >
+
+
+        <EditText
+            android:id="@+id/dobtxtId"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Date of birth"
+            android:textAlignment="textStart"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        >
+
+
+
+        <EditText
+            android:id="@+id/emailtxtId"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="E-mail"
+            android:textAlignment="textStart"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        >
+
+        <Button
+            android:id="@+id/storeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@color/sienna"
+            android:onClick="storeDetails"
+            android:text="Store Details"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/viewBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@color/sienna"
+            android:onClick="viewDetails"
+            android:text="View Details"
+            android:textAlignment="center"
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
